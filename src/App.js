@@ -1,9 +1,26 @@
 import React from "react"
-//import {BrowserRouter ,Route ,Routes} from "react-router-dom";
+import {BrowserRouter ,Route ,Routes} from "react-router-dom";
+import Inicio from "./componentes/Inicio";
 
 const App=()=>{
   return(
-    <div><h1>hola</h1></div>
+    <BrowserRouter>
+      <div>
+        
+        <div>
+        <Routes>
+          
+          
+        <Route path='/' element={
+         <Inicio/>
+        }/>
+        
+        </Routes>
+        </div>
+        
+      </div>
+      </BrowserRouter>
+      
   )
 }
 
